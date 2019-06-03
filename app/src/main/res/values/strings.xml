@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PDM_Parcial1</string>
+    <string name="titleApp">BasketBall Counter</string>
+    <string name="text_team_a">Team A</string>
+    <string name="text_team_b">Team B</string>
+    <string name="action_3_points">+3 POINTS</string>
+    <string name="action_2_points">+2 POINTS</string>
+    <string name="action_free_throw">+1 POINT</string>
+
+    <string name="action_reset">Finish</string>
+</resources>

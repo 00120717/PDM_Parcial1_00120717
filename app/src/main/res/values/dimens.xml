@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padd_5">5dp</dimen>
+    <dimen name="medium_gap">16dp</dimen>
+    <dimen name="big_text">40sp</dimen>
+    <dimen name="small_gap">8dp</dimen>
+    <dimen name="big_gap">24dp</dimen>
+    <dimen name="thirty_gap">35dp</dimen>
+</resources>
