@@ -48,6 +48,28 @@ class CounterViewer : AppCompatActivity() {
             scoreViewModel.winner
         )
 
+
+        viewModel = ViewModelProviders.of(this).get(PartidosViewmodel::class.java)
+
+
+        btn_finish.setOnClickListener{
+
+
+            //TODO insertar partido al dar click al boton Finish
+            viewModel.insertPartidos(
+                Partidos(
+                    tv_team_A.text.toString(),
+                    tv_team_B.text.toString(),
+                    tv_score_team_a.text.toString(),
+                    tv_score_team_b.text.toString(),
+                    et_date.text.toString(),
+                    et_time.text.toString(),
+                    tv_winner.text.toString()
+                ))
+
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+
     }
 
 //TODO funcion para insertar partido a la bd
@@ -64,23 +86,7 @@ class CounterViewer : AppCompatActivity() {
             adapter.updateList(it)
         })
 
-        btn_finish.setOnClickListener{
 
-
-            //TODO insertar partido al dar click al boton Finish
-            viewModel.insertPartidos(
-                Partidos(
-                    tv_team_A.text.toString(),
-                    tv_team_B.text.toString(),
-                    tv_score_team_a.text.toString(),
-                    tv_score_team_b.text.toString(),
-                    et_date.text.toString(),
-                    et_time.text.toString(),
-                    tv_winner.text.toString()
-                    ))
-
-            startActivity(Intent(this, MainActivity::class.java))
-        }
 
 
     }

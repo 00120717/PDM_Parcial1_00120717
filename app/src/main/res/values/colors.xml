@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="win">#FF9800</color>
+    <color name="date">#837676</color>
+    <color name="time">#272525</color>
+    <color name="blue">#2196F3</color>
 </resources>
