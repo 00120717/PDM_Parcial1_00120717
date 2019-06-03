@@ -67,7 +67,6 @@ class CounterViewer : AppCompatActivity() {
         btn_finish.setOnClickListener{
 
 
-
             //TODO insertar partido al dar click al boton Finish
             viewModel.insertPartidos(
                 Partidos(
@@ -82,6 +81,7 @@ class CounterViewer : AppCompatActivity() {
 
             startActivity(Intent(this, MainActivity::class.java))
         }
+
 
     }
 

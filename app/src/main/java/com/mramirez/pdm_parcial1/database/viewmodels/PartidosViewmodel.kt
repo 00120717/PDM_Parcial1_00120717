@@ -21,6 +21,8 @@ class PartidosViewmodel(app: Application): AndroidViewModel(app){
 
     fun getAllPartidos(): LiveData<List<Partidos>> = repository.getAllPartidos()
 
+    fun getMatchById(id:Long):LiveData<Partidos> = repository.getMatchById(id)
+
     fun insertPartidos(partido: Partidos) = viewModelScope.launch(Dispatchers.IO){
         repository.insert(partido)
     }

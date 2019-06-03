@@ -11,6 +11,8 @@ class PartidosRepository(private val repoDao: PartidosDao){
 
     fun deletePartidos() = repoDao.deletePartidos()
 
+    fun getMatchById(id:Long):LiveData<Partidos> = repoDao.getMatchById(id)
+
     @WorkerThread
     suspend fun insert(partido: Partidos){
         repoDao.insertPartido(partido)

@@ -18,4 +18,7 @@ interface PartidosDao{
 
     @Query("DELETE FROM partidos")
     fun deletePartidos()
+
+    @Query("SELECT * FROM partidos WHERE id=:id")
+    fun getMatchById(id:Long):LiveData<Partidos>
 }
